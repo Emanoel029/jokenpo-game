@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="ema.ico" type="image/x-icon" />
+    <title>Jokenpô</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jokenpô</h1>
+      <div class="buttons">
+        <button id="pedra" onclick="jogarUsuario('pedra')">&#x1F44A;</button>
+        <button id="papel" onclick="jogarUsuario('papel')">&#x1F590;</button>
+        <button id="tesoura" onclick="jogarUsuario('tesoura')">
+          &#x270C;&#x1F3FB;
+        </button>
+      </div>
+      <p class="res"></p>
+      <p class="pontuacao-Usu">
+        Sua pontuação: <span id="Usu-pontuacao">0</span>
+      </p>
+      <p class="pontuacao-Maq">
+        Sua pontuação Alexia <span id="Maq-pontuacao">0</span>
+      </p>
+    </div>
+  </body>
+  <!--O script tem que ser chamado aqui pq se ñ ele é executado antes do HTML isso pode fazer com que os selectores document.querySelector ñ encontrem os elementos corretamente-->
+  <script src="script.js"></script>
+</html>
