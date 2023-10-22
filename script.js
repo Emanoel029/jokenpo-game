@@ -6,16 +6,20 @@ const maqPont = document.querySelector('#Maq-pontuacao');
 let usuPontNumber = 0;
 let maqPontNumber = 0;
 
+//função q permite o usuário jogue com suas escolhas
 const jogarUsuario = (usuEscolhe) => {
+//Chama a função jogar com as escolhas do usuário e da máquina
   jogar(usuEscolhe, maqEscolhe());
 };
 
+//Escolha da máquina
 const maqEscolhe = () => {
   const escolha = ['pedra', 'papel', 'tesoura'];
   const numAleatorio = Math.floor(Math.random() * 3);
   return escolha[numAleatorio];
 };
 
+//atualiza o resultado e a pontuação
 const jogar = (usuario, maquina) => {
   console.log('Usuario: ' + usuario + ' Maquina: ' + maquina);
 
